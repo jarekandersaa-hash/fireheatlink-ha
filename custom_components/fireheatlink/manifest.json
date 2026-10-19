@@ -1,0 +1,14 @@
+{
+  "domain": "fireheatlink",
+  "name": "Sterownik pieca CO / Boiler Controller",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://fireheatlink.pages.dev",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://fireheatlink.pages.dev",
+  "requirements": [],
+  "version": "1.0.0",
+  "zeroconf": [
+    { "type": "_http._tcp.local.", "name": "boiler*" }
+  ]
+}

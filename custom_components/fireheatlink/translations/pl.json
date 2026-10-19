@@ -1,0 +1,100 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Sterownik pieca",
+        "description": "Wpisz adres sterownika (boiler.local lub jego IP). Sterowniki w tej samej sieci są wykrywane automatycznie.",
+        "data": {
+          "host": "Adres"
+        }
+      },
+      "confirm": {
+        "title": "Znaleziono sterownik pieca",
+        "description": "Dodać sterownik pod adresem {host}?"
+      }
+    },
+    "error": {
+      "cannot_connect": "Nie można połączyć się ze sterownikiem pod tym adresem."
+    },
+    "abort": {
+      "already_configured": "Ten sterownik jest już dodany.",
+      "not_boiler": "Znalezione urządzenie nie jest sterownikiem pieca."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "state": {
+        "name": "Stan",
+        "state": {
+          "stopped": "Zatrzymany",
+          "auto": "Auto",
+          "manual": "Ręczny",
+          "alarm": "Alarm"
+        }
+      },
+      "temp_boiler": {
+        "name": "Temperatura pieca"
+      },
+      "temp_water": {
+        "name": "Temperatura wody użytkowej"
+      },
+      "temp_auger": {
+        "name": "Temperatura ślimaka"
+      },
+      "temp_room": {
+        "name": "Temperatura pokoju"
+      },
+      "temp_flue": {
+        "name": "Temperatura spalin"
+      },
+      "blower": {
+        "name": "Dmuchawa"
+      },
+      "fuel_total": {
+        "name": "Zużyty opał"
+      },
+      "wifi_rssi": {
+        "name": "Sygnał WiFi"
+      }
+    },
+    "binary_sensor": {
+      "alarm": {
+        "name": "Alarm"
+      },
+      "pump_heating": {
+        "name": "Pompa grzejników"
+      },
+      "pump_dhw": {
+        "name": "Pompa CWU"
+      },
+      "auger": {
+        "name": "Ślimak"
+      }
+    },
+    "switch": {
+      "running": {
+        "name": "Praca"
+      },
+      "manual": {
+        "name": "Tryb ręczny"
+      },
+      "room_control": {
+        "name": "Sterowanie pokojowe"
+      }
+    },
+    "number": {
+      "set_boiler": {
+        "name": "Temperatura zadana pieca"
+      },
+      "set_water": {
+        "name": "Temperatura zadana CWU"
+      },
+      "set_room": {
+        "name": "Temperatura zadana pokoju"
+      },
+      "set_boiler_max_room": {
+        "name": "Maks. temperatura pieca (tryb pokojowy)"
+      }
+    }
+  }
+}

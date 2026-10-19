@@ -1,0 +1,100 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Boiler controller",
+        "description": "Enter the controller address (boiler.local or its IP). Controllers on the same network are found automatically.",
+        "data": {
+          "host": "Address"
+        }
+      },
+      "confirm": {
+        "title": "Boiler controller found",
+        "description": "Add the controller at {host}?"
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot reach a controller at this address."
+    },
+    "abort": {
+      "already_configured": "This controller is already added.",
+      "not_boiler": "The device found is not a boiler controller."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "state": {
+        "name": "State",
+        "state": {
+          "stopped": "Stopped",
+          "auto": "Auto",
+          "manual": "Manual",
+          "alarm": "Alarm"
+        }
+      },
+      "temp_boiler": {
+        "name": "Boiler temperature"
+      },
+      "temp_water": {
+        "name": "Hot water temperature"
+      },
+      "temp_auger": {
+        "name": "Auger temperature"
+      },
+      "temp_room": {
+        "name": "Room temperature"
+      },
+      "temp_flue": {
+        "name": "Flue gas temperature"
+      },
+      "blower": {
+        "name": "Blower"
+      },
+      "fuel_total": {
+        "name": "Fuel used"
+      },
+      "wifi_rssi": {
+        "name": "WiFi signal"
+      }
+    },
+    "binary_sensor": {
+      "alarm": {
+        "name": "Alarm"
+      },
+      "pump_heating": {
+        "name": "Heating pump"
+      },
+      "pump_dhw": {
+        "name": "Hot water pump"
+      },
+      "auger": {
+        "name": "Auger"
+      }
+    },
+    "switch": {
+      "running": {
+        "name": "Running"
+      },
+      "manual": {
+        "name": "Manual mode"
+      },
+      "room_control": {
+        "name": "Room control"
+      }
+    },
+    "number": {
+      "set_boiler": {
+        "name": "Boiler setpoint"
+      },
+      "set_water": {
+        "name": "Hot water setpoint"
+      },
+      "set_room": {
+        "name": "Room setpoint"
+      },
+      "set_boiler_max_room": {
+        "name": "Max boiler temperature (room mode)"
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Sterownik pieca CO / Boiler Controller",
+  "render_readme": true,
+  "country": "PL",
+  "homeassistant": "2024.1.0"
+}
