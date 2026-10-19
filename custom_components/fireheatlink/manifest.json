@@ -9,6 +9,7 @@
   "requirements": [],
   "version": "1.0.0",
   "zeroconf": [
+    { "type": "_fireheatlink._tcp.local." },
     { "type": "_http._tcp.local.", "name": "boiler*" }
   ]
 }
