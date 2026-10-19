@@ -25,3 +25,9 @@ The integration talks to the controller **directly over your home network** (HTT
 **Entities:** state (stopped / auto / manual / alarm), temperatures (boiler, water, auger, room, flue gas), blower, fuel used, alarm, pumps and auger; switches: running, manual mode, room control; setpoints: boiler, hot water, room, max boiler temperature in room mode.
 
 **Note:** the controller's local API has no password, so use it only on a trusted home network.
+
+## Licencja / Licence
+
+PL: darmowe do pobrania i używania wyłącznie ze sterownikiem FireHeatLink, bez prawa modyfikacji i rozpowszechniania. Szczegóły w pliku [LICENSE](LICENSE).
+
+EN: free to download and use, only with a FireHeatLink controller, with no right to modify or redistribute. See [LICENSE](LICENSE).

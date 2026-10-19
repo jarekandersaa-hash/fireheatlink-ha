@@ -1,0 +1,32 @@
+FireHeatLink Home Assistant integration - Proprietary free-use licence
+Copyright (c) 2026 jarekandersaa-hash (FireHeatLink). All rights reserved.
+
+EN
+
+1. Permission. Anyone may download, install and use this software free of charge,
+   but only together with a genuine FireHeatLink boiler controller (the "Controller").
+2. No modification. You may not modify, adapt, translate, reverse engineer or create
+   derivative works of this software or of the contents of this repository.
+3. No redistribution. You may not copy, publish, sell, sublicense or distribute this
+   software or any part of it, except by installing it unchanged through HACS or
+   downloading it unchanged from this repository for your own use.
+4. No warranty. The software is provided "as is", without warranty of any kind. The
+   author is not liable for any damage resulting from its use, including any effect
+   on the operation of a boiler. The integration is a convenience and must not be
+   relied on for safety functions.
+5. All rights not expressly granted are reserved by the author.
+
+PL
+
+1. Zezwolenie. Każdy może pobrać, zainstalować i używać to oprogramowanie bezpłatnie,
+   ale wyłącznie razem z oryginalnym sterownikiem pieca FireHeatLink ("Sterownik").
+2. Zakaz modyfikacji. Zabrania się modyfikowania, adaptowania, tłumaczenia, dekompilacji
+   oraz tworzenia dzieł zależnych od tego oprogramowania i zawartości repozytorium.
+3. Zakaz rozpowszechniania. Zabrania się kopiowania, publikowania, sprzedaży,
+   sublicencjonowania i rozpowszechniania tego oprogramowania lub jego części, poza
+   instalacją w niezmienionej postaci przez HACS lub pobraniem w niezmienionej postaci
+   z tego repozytorium na własny użytek.
+4. Brak gwarancji. Oprogramowanie jest dostarczane "tak jak jest", bez żadnej gwarancji.
+   Autor nie odpowiada za szkody wynikające z jego użycia, w tym za wpływ na pracę pieca.
+   Integracja jest wygodą i nie może być podstawą funkcji bezpieczeństwa.
+5. Wszelkie prawa niewyraźnie udzielone zastrzega autor.
