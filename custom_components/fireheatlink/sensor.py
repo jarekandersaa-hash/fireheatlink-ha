@@ -24,6 +24,17 @@ def _state(d: dict) -> str:
     return "manual" if d.get("manualMode") else "auto"
 
 
+def _ok(v) -> bool:
+    return isinstance(v, (int, float)) and v > -100
+
+
+def _delta(d: dict) -> float | None:
+    """Różnica temperatur: piec minus powrót z grzejników."""
+    if d.get("retSet") and _ok(d.get("tempPiec")) and _ok(d.get("tempPowrot")):
+        return round(d["tempPiec"] - d["tempPowrot"], 1)
+    return None
+
+
 def _fuel_kg(d: dict) -> float | None:
     f = d.get("fuel") or {}
     if not f.get("en") or not f.get("gps"):
@@ -50,6 +61,12 @@ SENSORS: tuple[Desc, ...] = (
          available=lambda d: bool(d.get("roomSensorConnected")), **TEMP),
     Desc(key="temp_flue", translation_key="temp_flue", value=lambda d: d.get("flueTemp"),
          available=lambda d: bool(d.get("flueEnabled")), **TEMP),
+    Desc(key="temp_return", translation_key="temp_return", value=lambda d: d.get("tempPowrot") if _ok(d.get("tempPowrot")) else None,
+         available=lambda d: bool(d.get("retSet")), **TEMP),
+    Desc(key="temp_extra", translation_key="temp_extra", value=lambda d: d.get("tempExtra") if _ok(d.get("tempExtra")) else None,
+         available=lambda d: bool(d.get("extraSet")), **TEMP),
+    Desc(key="temp_delta", translation_key="temp_delta", device_class=SensorDeviceClass.TEMPERATURE, native_unit_of_measurement=UnitOfTemperature.CELSIUS,
+         state_class=SensorStateClass.MEASUREMENT, value=_delta, available=lambda d: bool(d.get("retSet"))),
     Desc(key="blower", translation_key="blower", native_unit_of_measurement=PERCENTAGE,
          state_class=SensorStateClass.MEASUREMENT, value=lambda d: d.get("dmuchawa")),
     Desc(key="fuel_total", translation_key="fuel_total", device_class=SensorDeviceClass.WEIGHT,

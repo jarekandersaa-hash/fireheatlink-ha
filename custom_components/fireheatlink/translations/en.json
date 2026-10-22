@@ -55,6 +55,15 @@
       },
       "wifi_rssi": {
         "name": "WiFi signal"
+      },
+      "temp_return": {
+        "name": "Radiator return temperature"
+      },
+      "temp_extra": {
+        "name": "Extra sensor temperature"
+      },
+      "temp_delta": {
+        "name": "Boiler minus return"
       }
     },
     "binary_sensor": {
@@ -69,6 +78,15 @@
       },
       "auger": {
         "name": "Auger"
+      },
+      "valve_tank": {
+        "name": "Valve to hot water tank"
+      },
+      "warn_no_flow": {
+        "name": "No flow through radiators"
+      },
+      "warn_radiators": {
+        "name": "Radiators not taking heat"
       }
     },
     "switch": {

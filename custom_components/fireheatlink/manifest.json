@@ -7,7 +7,7 @@
   "iot_class": "local_polling",
   "issue_tracker": "https://fireheatlink.pages.dev",
   "requirements": [],
-  "version": "1.0.0",
+  "version": "1.1.0",
   "zeroconf": [
     { "type": "_fireheatlink._tcp.local." },
     { "type": "_http._tcp.local.", "name": "boiler*" }

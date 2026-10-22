@@ -55,6 +55,15 @@
       },
       "wifi_rssi": {
         "name": "Sygnał WiFi"
+      },
+      "temp_return": {
+        "name": "Temperatura powrotu z grzejników"
+      },
+      "temp_extra": {
+        "name": "Temperatura czujnika dodatkowego"
+      },
+      "temp_delta": {
+        "name": "Różnica piec – powrót"
       }
     },
     "binary_sensor": {
@@ -69,6 +78,15 @@
       },
       "auger": {
         "name": "Ślimak"
+      },
+      "valve_tank": {
+        "name": "Zawór na zasobnik"
+      },
+      "warn_no_flow": {
+        "name": "Brak przepływu przez grzejniki"
+      },
+      "warn_radiators": {
+        "name": "Grzejniki nie odbierają ciepła"
       }
     },
     "switch": {

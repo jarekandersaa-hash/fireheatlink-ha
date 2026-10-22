@@ -9,7 +9,7 @@ Integracja łączy się ze sterownikiem **bezpośrednio po sieci domowej** (HTTP
 2. Pobierz „Sterownik pieca CO”, uruchom ponownie Home Assistanta.
 3. Jeśli sterownik jest w tej samej sieci WiFi co Home Assistant, pojawi się w *Ustawienia → Urządzenia i usługi* jako wykryty. Kliknij *Skonfiguruj*. Jeśli nie, dodaj integrację ręcznie i wpisz `boiler.local` lub adres IP sterownika.
 
-**Co dostajesz:** stan (zatrzymany / auto / ręczny / alarm), temperatury (piec, woda, ślimak, pokój, spaliny), dmuchawa, zużyty opał, alarm, pompy i ślimak; przełączniki: praca, tryb ręczny, sterowanie pokojowe; nastawy: piec, CWU, pokój, maks. temperatura pieca w trybie pokojowym.
+**Co dostajesz:** stan (zatrzymany / auto / ręczny / alarm), temperatury (piec, woda, ślimak, pokój, spaliny, powrót z grzejników, czujnik dodatkowy), różnica piec – powrót, dmuchawa, zużyty opał, alarm, pompy, zawór trójdrożny i ślimak, ostrzeżenia z czujnika powrotu (brak przepływu, grzejniki nie odbierają ciepła); przełączniki: praca, tryb ręczny, sterowanie pokojowe; nastawy: piec, CWU, pokój, maks. temperatura pieca w trybie pokojowym.
 
 **Uwaga:** lokalne API sterownika nie ma hasła, więc używaj go tylko w zaufanej sieci domowej.
 
@@ -22,7 +22,7 @@ The integration talks to the controller **directly over your home network** (HTT
 2. Download "Boiler Controller", restart Home Assistant.
 3. If the controller is on the same WiFi network as Home Assistant it shows up as discovered under *Settings → Devices & services*. Click *Configure*. Otherwise add the integration manually and enter `boiler.local` or the controller's IP address.
 
-**Entities:** state (stopped / auto / manual / alarm), temperatures (boiler, water, auger, room, flue gas), blower, fuel used, alarm, pumps and auger; switches: running, manual mode, room control; setpoints: boiler, hot water, room, max boiler temperature in room mode.
+**Entities:** state (stopped / auto / manual / alarm), temperatures (boiler, water, auger, room, flue gas, radiator return, extra sensor), boiler minus return difference, blower, fuel used, alarm, pumps, three-way valve and auger, return sensor warnings (no flow, radiators not taking heat); switches: running, manual mode, room control; setpoints: boiler, hot water, room, max boiler temperature in room mode.
 
 **Note:** the controller's local API has no password, so use it only on a trusted home network.
 
